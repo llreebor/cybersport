@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Мой шаблон</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/slick.css">
+</head>
+
+<body id="thanks">
+  <header class="thanks__header">
+    <!-------------------------------------------  Navbar ------------------------------------------->
+    <nav>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo"> <a href="#"> </a> </div>
+          <div class="menu">
+            <ul class="menu__list">                                                      
+              <li class="menu__list-item"><a href="/#cybersport">Киберспорт </a></li>
+              <li class="menu__list-item"><a href="/#about">Курсы </a></li>
+              <li class="menu__list-item"><a href="/#sallary">Заработок </a></li>
+              <li class="menu__list-item"><a href="/#info2">Преимущества</a></li>
+              <li class="menu__list-item"><a href="/#partners">Про нас</a></li>
+              <li class="menu__list-item"><a href="/#reviews">Отзывы</a></li>
+            </ul>
+          </div>
+          <div class="button">
+            <a href="#" class="nav__btn modal__btn">Попробовать</a>
+          </div>
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
+      </div>
+    </nav>
+    <!------------------------------------------- Navbar End ---------------------------------------->
+    <div class="container">
+      <div class="thanks__item">
+        <h1 class="thanks__title">Благодарим за доверие!</h1>
+        <div class="thanks__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом. </div>
+        <ul class="thanks__footer">
+          <li class="thanks__footer-item"><a href=""> <img src="./img/twitter.svg" alt="social"> </a></li>
+          <li class="thanks__footer-item"><a href=""><img src="./img/facebook.svg" alt="social"></a></li>
+          <li class="thanks__footer-item"><a href=""><img src="./img/watsapp.svg" alt="social"></a></li>
+          <li class="thanks__footer-item"><a href=""><img src="./img/viber.svg" alt="social"></a></li>
+          <li class="thanks__footer-item"><a href=""><img src="./img/youtube.svg" alt="social"></a></li>
+          <li class="thanks__footer-item"><a href=""><img src="./img/vk.svg" alt="social"></a></li>
+          <li class="thanks__footer-item"><a href=""><img src="./img/instagramm.svg" alt="social"></a></li>
+        </ul>
+        
+      </div>
+    </div>
+  </header>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="modal__wrapper">
+    <div class="modal">
+      <div class="modal__close"> <img src="./img/cancel.svg" alt="cancel" width="10px" height="10px"></div>
+      <div class="modal__title"><span>Форма заявки</span> </div>
+      <div class="modal__body">
+        <form action="" class="form">
+
+          <input type="hidden" name="project_name" value="Заявка с сайта">
+          <input type="hidden" name="admin_email" value="serdnaley@gmail.com">
+          <input type="hidden" name="form_subject" value="Форма">
+          <input type="hidden" id="btn__input" name="Кнопка вызова" value="">
+
+          <div class="form__item">
+            Ваше имя
+            <input type="text"class="input" placeholder="Введите имя:" required name="Имя" >
+          </div>
+          <div class="form__item">
+            Ваша Фамилия
+            <input type="text"class="input"  placeholder="Введите фамилию" name="Фамилия" required>
+          </div>
+          <div class="form__item">
+            E-mail
+            <input type="email"class="input"  placeholder="Введите адрес" name="Email" required>
+          </div>
+          <div class="form__item">
+            Социальные сети
+
+            <div class="c-dropdown js-dropdown">
+              <input type="hidden" name="Соцсеть" id="Framework" class="js-dropdown__input input" required>
+              <span class="c-button c-button--dropdown js-dropdown__current">Выберите социальную сеть</span>
+              <ul class="c-dropdown__list">
+                <li class="c-dropdown__item" data-dropdown-value="Twitter">Twitter</li>
+                <li class="c-dropdown__item" data-dropdown-value="Facebook">Facebook</li>
+                <li class="c-dropdown__item" data-dropdown-value="Watsapp">Watsapp</li>
+                <li class="c-dropdown__item" data-dropdown-value="Viber">Viber</li>
+                <li class="c-dropdown__item" data-dropdown-value="Youtube">Youtube</li>
+                <li class="c-dropdown__item" data-dropdown-value="VK">VK</li>
+                <li class="c-dropdown__item" data-dropdown-value="Instagram">Instagram</li>
+              </ul>
+            </div>
+
+
+            <input type="text" class="input" placeholder="Ссылка на аккаунт" name="Ссылка на аккаунт">
+          </div>
+          <div class="form__item">
+            <button class="form__btn" type="submit" onclick="validate()">Отправить заявку</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="./js/scripts.min.js"></script>
+
+</body>
+</html>
